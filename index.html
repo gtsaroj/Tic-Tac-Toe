@@ -1,49 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe</title>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="main">
-        <h1>Tic Tac Toe</h1>
-        <p class="ins">
-            Game starts by just Tap on Box
-        </p>
-        <p class="ins">
-            First Player Starts as <strong onchange="myFunc_01" id="name">Player X</strong>
-            And Second Player as <strong onchange="myFunc_02" id="secondName">Player 0</strong>
-        </p>
-        <div class="game">
-            <div class="bond">
-                <div class="row">
-                    <input type="text" id="b1" class="cell" onclick="myFunc_3(); myfunc();" readonly>
-                    <input type="text" id="b2" class="cell" onclick="myFunc_4(); myfunc();" readonly>
-                    <input type="text" id="b3" class="cell" onclick="myFunc_5(); myfunc();" readonly>
-                </div>
-                <div class="row">
-                    <input type="text" id="b4" class="cell" onclick="myFunc_6(); myfunc();" readonly>
-                    <input type="text" id="b5" class="cell" onclick="myFunc_7(); myfunc();" readonly>
-                    <input type="text" id="b6" class="cell" onclick="myFunc_8(); myfunc();" readonly>
-                </div>
-                <div class="row">
-                    <input type="text" id="b7" class="cell" onclick="myFunc_9(); myfunc();" readonly>
-                    <input type="text" id="b8" class="cell" onclick="myFunc_10(); myfunc();" readonly>
-                    <input type="text" id="b9" class="cell" onclick="myFunc_11(); myfunc();" readonly>
-                </div>
-            </div>
-            <button class="but" onclick="myFunc_2()">Reset</button>
-            <p id="print"></p>
+      <h1>Tic Tac Toe</h1>
+      <p class="ins">Game starts by just Tap on Box</p>
+      <p class="ins ins-a">
+        First Player Starts as
+        <strong onchange="myFunc_01" id="name">Player X</strong> And Second
+        Player as <strong onchange="myFunc_02" id="secondName">Player 0</strong>
+      </p>
+      <div class="game">
+        <div class="bond">
+          <div class="row">
+            <input
+              type="text"
+              id="b1"
+              class="cell"
+              onclick="myFunc_3(); myfunc();"
+              readonly
+            />
+            <input
+              type="text"
+              id="b2"
+              class="cell"
+              onclick="myFunc_4(); myfunc();"
+              readonly
+            />
+            <input
+              type="text"
+              id="b3"
+              class="cell"
+              onclick="myFunc_5(); myfunc();"
+              readonly
+            />
+          </div>
+          <div class="row">
+            <input
+              type="text"
+              id="b4"
+              class="cell"
+              onclick="myFunc_6(); myfunc();"
+              readonly
+            />
+            <input
+              type="text"
+              id="b5"
+              class="cell"
+              onclick="myFunc_7(); myfunc();"
+              readonly
+            />
+            <input
+              type="text"
+              id="b6"
+              class="cell"
+              onclick="myFunc_8(); myfunc();"
+              readonly
+            />
+          </div>
+          <div class="row">
+            <input
+              type="text"
+              id="b7"
+              class="cell"
+              onclick="myFunc_9(); myfunc();"
+              readonly
+            />
+            <input
+              type="text"
+              id="b8"
+              class="cell"
+              onclick="myFunc_10(); myfunc();"
+              readonly
+            />
+            <input
+              type="text"
+              id="b9"
+              class="cell"
+              onclick="myFunc_11(); myfunc();"
+              readonly
+            />
+          </div>
         </div>
-
-
+        <button class="button" onclick="myFunc_2()">Reset</button>
+        <p id="print"></p>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>
